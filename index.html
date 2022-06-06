@@ -1,92 +1,140 @@
 <!DOCTYPE html>
-<!-- Design by foolishdeveloper.com-->
 <html lang="en">
 <head>
-  <title>filterable gallery</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- css here -->
+	<link rel="stylesheet" href="style.css">
 
+    <title>Filterable Image Gallery | ATDilakshan</title>
+	
 </head>
 <body>
 
-<section class="gallery">
-	<div class="container">
-		<div class="row">
-			<div class="gallery-filter">
-				<span class="filter-item active" data-filter="all">all</span>
-				<span class="filter-item" data-filter="watch">Watch</span>
-				<span class="filter-item" data-filter="headphone">headphone</span>
-				<span class="filter-item" data-filter="camera">camera</span>
-        <span class="filter-item" data-filter="phone">Phone</span>
-			</div>
+	<section class="image-gallery">
+		
+		<div class="category-lists">
+			<ul>
+				<li class="cat-list active" data-filter="all">All</li>
+				<li class="cat-list" data-filter="car">Car</li>
+				<li class="cat-list" data-filter="motorbike">Motorbike</li>
+				<li class="cat-list" data-filter="boat">Boat</li>
+				<li class="cat-list" data-filter="helicopter">Helicopter</li>
+			</ul>
 		</div>
-		<div class="row">
-			<!-- gallery item start -->
-			<div class="gallery-item shoe">
-				<div class="gallery-item-inner">
-					<img src="https://1.bp.blogspot.com/-QvLveiaH3VI/YS_C1lXw6-I/AAAAAAAACa0/1hIbUlfQUQ8ew--PZ8IYB_55WFYTX8OtQCNcBGAsYHQ/s0/shoe-1.jpg" alt="shoe">
-				</div>
-			</div>
-			<!-- gallery item end -->
-			<!-- gallery item start -->
-			<div class="gallery-item headphone">
-				<div class="gallery-item-inner">
-					<img src="https://1.bp.blogspot.com/-T3KmNJ1-wYw/YS_E3rHDRII/AAAAAAAACb4/_DVj1_wL7eUZzJ45z9RQS5JG1orI_VlvACNcBGAsYHQ/s0/headphone-1.jpg" alt="headphone">
-				</div>
-			</div>
-			<!-- gallery item end -->
-			<!-- gallery item start -->
-			<div class="gallery-item camera">
-				<div class="gallery-item-inner">
-					<img src="https://1.bp.blogspot.com/-I4zq8AEp_jY/YS_C3MiTUqI/AAAAAAAACa8/GjRpPmI0eqE_g52nIv7gUrh_9AGQbQkoACNcBGAsYHQ/s0/camera-1.jpg" alt="camera">
-				</div>
-			</div>
-			<!-- gallery item end -->
-			<!-- gallery item start -->
-			<div class="gallery-item headphone">
-				<div class="gallery-item-inner">
-					<img src="https://1.bp.blogspot.com/-pEh6HYKdNtc/YS_DSTsTrVI/AAAAAAAACbk/ND95Y8qxhPUQlUE0N38GNUx207fkzTR2QCNcBGAsYHQ/s0/headphone-2.jpg" alt="headphone">
-				</div>
-			</div>
-			<!-- gallery item end -->
-			<!-- gallery item start -->
-			<div class="gallery-item camera">
-				<div class="gallery-item-inner">
-					<img src="https://1.bp.blogspot.com/--7JZU9HynIU/YS_DH53WPiI/AAAAAAAACbY/ivcZm6OVbTgSfc9JWX1OE4WwKmvhcY07wCNcBGAsYHQ/s0/camera-2.jpg" alt="camera">
-				</div>
-			</div>
-			<!-- gallery item end -->
-      			<div class="gallery-item phone">
-      				<div class="gallery-item-inner">
-      					<img src="https://1.bp.blogspot.com/-wX4lusii0OE/YS_DC2BpADI/AAAAAAAACbA/tTGcB7QUQnshvW8hbEtf1-Nnj6dl3wSzgCNcBGAsYHQ/s0/phone-1.jpg" alt="phone">
-      				</div>
-      			</div>
 
-			<div class="gallery-item camera">
-				<div class="gallery-item-inner">
-					<img src="https://1.bp.blogspot.com/-12xO4l2QXGM/YS_DDwhwSYI/AAAAAAAACbI/OyLyIX89tnwmpwxcYoVED-x8uRWq56TawCNcBGAsYHQ/s0/camera-3.jpg" alt="camera">
+		<div class="box-container">
+
+			<div class="box" data-item="car">
+				<div class="image">
+					<img src="images/car1.jpg" alt="">
+				</div>
+			</div>
+			
+			<div class="box" data-item="motorbike">
+				<div class="image">
+					<img src="images/motorbike1.jpg" alt="">
+				</div>
+			</div>
+			
+			<div class="box" data-item="car">
+				<div class="image">
+					<img src="images/car2.jpeg" alt="">
+				</div>
+			</div>
+			
+			<div class="box" data-item="boat">
+				<div class="image">
+					<img src="images/boat1.jpg" alt="">
 				</div>
 			</div>
 
-			<div class="gallery-item watch">
-				<div class="gallery-item-inner">
-					<img src="https://1.bp.blogspot.com/-rAOuebpUc6E/YS_C1gP9q2I/AAAAAAAACa4/emX-5ZEz-MUeUr11_iaj_BkEYbs-FH8kQCNcBGAsYHQ/s0/watch-1.jpg" alt="watch">
+			<div class="box" data-item="helicopter">
+				<div class="image">
+					<img src="images/helicopter1.jpeg" alt="">
+				</div>
+			</div>
+			
+			<div class="box" data-item="car">
+				<div class="image">
+					<img src="images/car3.jpg" alt="">
+				</div>
+			</div>
+			
+			<div class="box" data-item="motorbike">
+				<div class="image">
+					<img src="images/motorbike2.jpg" alt="">
 				</div>
 			</div>
 
-			<!-- gallery item start -->
-			<div class="gallery-item watch">
-				<div class="gallery-item-inner">
-					<img src="https://1.bp.blogspot.com/-sBZvlxLrXL8/YS_DDZdTaJI/AAAAAAAACbE/RKImX4fKJIs7NJV_SAj1bIGYjx1-acB8wCNcBGAsYHQ/s0/watch-2.jpg" alt="watch">
+			<div class="box" data-item="helicopter">
+				<div class="image">
+					<img src="images/helicopter2.jpg" alt="">
 				</div>
 			</div>
-			<!-- gallery item end -->
+			
+			<div class="box" data-item="car">
+				<div class="image">
+					<img src="images/car4.jpg" alt="">
+				</div>
+			</div>
+			
+			<div class="box" data-item="motorbike">
+				<div class="image">
+					<img src="images/motorbike3.jpg" alt="">
+				</div>
+			</div>
+			
+			<div class="box" data-item="boat">
+				<div class="image">
+					<img src="images/boat2.jpg" alt="">
+				</div>
+			</div>
+			
+			<div class="box" data-item="car">
+				<div class="image">
+					<img src="images/car5.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="box" data-item="helicopter">
+				<div class="image">
+					<img src="images/helicopter3.jpeg" alt="">
+				</div>
+			</div>
+			
+			<div class="box" data-item="motorbike">
+				<div class="image">
+					<img src="images/motorbike4.jpg" alt="">
+				</div>
+			</div>
+			
+			<div class="box" data-item="motorbike">
+				<div class="image">
+					<img src="images/motorbike5.jpg" alt="">
+				</div>
+			</div>
+			
+			<div class="box" data-item="boat">
+				<div class="image">
+					<img src="images/boat3.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="box" data-item="helicopter">
+				<div class="image">
+					<img src="images/helicopter4.jpeg" alt="">
+				</div>
+			</div>
+
 		</div>
-	</div>
-</section>
 
-<script src="main.js"></script>
+	</section>
+
+	<!-- js here -->
+	<script src="main.js"></script>
+
 </body>
 </html>
